@@ -7,12 +7,7 @@ describe('Page start', () => {
   const baseUrl = 'http://localhost:9000';
 
   beforeAll(async () => {
-    browser = await puppeteer.launch({
-      // Comment in CI launch
-      // headless: false,
-      // slowMo: 100,
-      // devtools: true,
-    });
+    browser = await puppeteer.launch();
     page = await browser.newPage();
   });
 
