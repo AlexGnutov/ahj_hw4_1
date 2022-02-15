@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "test": "jest --testPathPattern=./src/",
     "coverage": "jest --testPathPattern=./src/ --coverage",
-    "e2e-server": "webpack serve --config webpack.dev.js",
+    "e2e-server": "node ./e2e/e2e.server.js",
     "e2e": "jest --testPathPattern=./e2e/ --runInBand",
     "doc": "jsdoc -c jsdoc.conf.json",
     "preshow:coverage": "npm run coverage",
