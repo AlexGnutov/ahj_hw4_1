@@ -4,7 +4,7 @@ jest.setTimeout(10000);
 describe('Page start', () => {
   let browser;
   let page;
-  const baseUrl = 'http://localhost:9000';
+  const baseUrl = 'localhost:9000';
 
   beforeAll(async () => {
     browser = await puppeteer.launch();
