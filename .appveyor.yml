@@ -17,7 +17,7 @@ build_script:
   - npm run build   # команда сборки
 
 before_test:
-  - node /e2e/e2e.server.js
+  - npm run e2e-server
 
 test_script:
   - npm run lint && npm test && npm run e2e  # скрипт тестирования
